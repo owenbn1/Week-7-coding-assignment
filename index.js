@@ -4,7 +4,6 @@ console.log(
 let ages = [3, 9, 23, 64, 2, 8, 28, 93];
 
 console.log(ages);
-console.log();
 console.log("a. Programmatically subtract the value of the first element in the array from the value in the last element of the array. -Do not use numbers to reference the last element, find it programmatically.- ages[7] - ages[0] is not allowed!");
 /* 1.Create an array called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
     a. Programmatically subtract the value of the first element in the array from the value in the last element of the array.
@@ -37,8 +36,10 @@ for (let i = 0; i < ages.length; i++) {
   //for loop that goes through each element and adds them together getting the sum of the array
 }
 
-console.log("sum: ", sumArray);
+let ageAverage = sumArray/ages.length;
 
+console.log("sum: ", sumArray);
+console.log("average age:",ageAverage)
 
 console.log(`2. Create an array called names that contains the following values: 'Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'.
 `)
@@ -175,7 +176,7 @@ sumArrayNumbers(numbers2);
 console.log("10. Write a function that takes an array of numbers and returns the average of all the elements in the array.")
 // 10. Write a function that takes an array of numbers and returns the average of all the elements in the array.
 
-function averageNumber(array) {
+function averageNumber(array){
   let sumNumbers = 0;
   for (let i = 0; i < array.length; i++) {
     sumNumbers += array[i];
